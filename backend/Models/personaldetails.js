@@ -4,31 +4,40 @@ const Schema = mongoose.Schema;
 
 let personalSchema = new Schema ({
     name: {
-        type: String
+        type: String,
+        required:true
     },
     email: {
-        type: String
+        type: String,
+        required:true
     },
     dob :{
-        type: String
+        type: String,
+        required:true
     },
     gender :{
-        type: String
+        type: String,
+        required:true
     },
-    presentAddress :{
-        type: String
+    presentAdd :{
+        type: String,
+        required:true
     },
-    premenentAddress:{
-        type: String
+    permanentAdd:{
+        type: String,
+        required:true
     },
     city: {
-        type: String
+        type: String,
+        required:true
     },
     state:{
-        type: String
+        type: String,
+        required:true
     },
-    zipCode:{
-        type: Number
+    zip:{
+        type: Number,
+        required:true
     }
 
 },{timestamps:true},
