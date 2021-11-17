@@ -3,20 +3,24 @@ const Schema = mongoose.Schema;
 
 
 
-let bankSchema = new Schema ({
+let qualficationSchema = new Schema ({
     name: {
         type: String,
         required:true
     },
-    bankName:{
+    ssc:{
         type: String,
         required:true
     },
-    ifsc:{
+    hsc:{
         type: String,
         required:true
     },
-    account_number:{
+    collegeName:{
+        type: String,
+        required: true
+    },
+    graduation:{
         type: Number,
         required: true
     }
@@ -24,4 +28,4 @@ let bankSchema = new Schema ({
 },{timestamps:true},
 )
 
-module.exports = mongoose.model('Bankinfo',bankSchema);
+module.exports = mongoose.model('Qualificationinfo',qualficationSchema);
