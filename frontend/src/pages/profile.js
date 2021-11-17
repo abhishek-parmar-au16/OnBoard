@@ -148,7 +148,7 @@ class Profile extends Component {
                 
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="submit" class="btn btn-primary">Next</button>
+                    {/* <button type="submit" class="btn btn-primary">Next</button> */}
                 </div>
                 
             </form>

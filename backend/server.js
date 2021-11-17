@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const {readdirSync} = require('fs');
 require('dotenv').config();
 
 
@@ -11,7 +12,8 @@ app.use(express.urlencoded({extended:true}));
 // Database connection
 require("./config/mongoConnect");
 
-const personalDetailsRoute = require('./routes/personalDetails');
+// const personalDetailsRoute = require('./routes/personalDetails');
+// const contactInfo = require('./routes/contactInfo');
 
 // PORT
 const PORT = process.env.PORT || 6000;
@@ -22,7 +24,12 @@ app.get('/',(req,res)=>{
 });
 
 app.use(cors());
-app.use('/api',personalDetailsRoute);
+// app.use('/api',personalDetailsRoute,contactInfo);
+
+
+readdirSync('./routes').map((r)=>
+    app.use("/api",require("./routes/" + r))
+);
 
 app.listen(PORT,()=>{
     console.log(`server is up and running on ${PORT}`);
