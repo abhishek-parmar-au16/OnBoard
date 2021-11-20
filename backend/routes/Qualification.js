@@ -4,11 +4,11 @@ let express = require('express');
 const router = express.Router();
 
 
-let contactSchema = require('../Models/qualifiactiondetails');
+let qualficationSchema = require('../Models/qualifiactiondetails');
 
 
 router.route('/qualification-info').post((req,res,next)=>{
-    contactSchema.create(req.body,(err,data)=>{
+    qualficationSchema.create(req.body,(err,data)=>{
         if(err){
             console.log(err);
             return next(err);

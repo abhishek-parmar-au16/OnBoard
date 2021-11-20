@@ -67,9 +67,9 @@ class Bank extends Component {
 				<Form.Control type="text" value={this.state.name} onChange={this.onChangeName} />
 				</Form.Group>
 
-				<Form.Group controlId="Bank-Name">
+				<Form.Group controlId="BankName">
 				<Form.Label>Bank Name</Form.Label>
-				<Form.Control type="bankname" value={this.state.bankName} onChange={this.onChangeBankName}  />
+				<Form.Control type="text" value={this.state.bankName} onChange={this.onChangeBankName}  />
 				</Form.Group>
 
 				<Form.Group controlId="IFSC">
@@ -79,7 +79,7 @@ class Bank extends Component {
 
 				<Form.Group controlId="Account">
 				<Form.Label>Account Number</Form.Label>
-				<Form.Control type="text" value={this.state.account_number} onChange={this.onChangeAccountNumber} />
+				<Form.Control type="number" value={this.state.account_number} onChange={this.onChangeAccountNumber} />
 				</Form.Group>
 				
 				<br/>

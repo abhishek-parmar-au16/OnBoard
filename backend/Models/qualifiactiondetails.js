@@ -9,11 +9,11 @@ let qualficationSchema = new Schema ({
         required:true
     },
     ssc:{
-        type: String,
+        type: Number,
         required:true
     },
     hsc:{
-        type: String,
+        type: Number,
         required:true
     },
     collegeName:{

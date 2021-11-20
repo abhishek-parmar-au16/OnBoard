@@ -22,7 +22,7 @@ class Qualification extends Component {
           ssc: '',
           hsc: '',
           collegeName:'',
-		  graduation:'',
+		      graduation:'',
           
 
         }
@@ -49,9 +49,9 @@ class Qualification extends Component {
     
       onSubmit(e) {
         e.preventDefault()
-        alert("Bank Detail Saved Sucessfully")
+        alert("Qualification Detail Saved Sucessfully")
         
-        const BankDetailObject = {
+        const QualificationDetailObject = {
           name: this.state.name,
           ssc: this.state.ssc,
           hsc: this.state.hsc,
@@ -59,13 +59,14 @@ class Qualification extends Component {
           graduation: this.state.graduation,
           
         };
-        axios.post('http://localhost:2021/api/bank-info', BankDetailObject)
+        axios.post('http://localhost:2021/api/qualification-info', QualificationDetailObject)
           .then(res => console.log(res.data));
     
         this.setState({ name: '', ssc: '', hsc: '',collegeName:'', graduation:''})
       }
 	render() {
 		return (
+      <div>
 			<div class="form-wrapper  col-md-5 position-absolute top-50 start-50 translate-middle">
 			<Form onSubmit={this.onSubmit} >
 				<Form.Group controlId="Name">
@@ -98,6 +99,7 @@ class Qualification extends Component {
 				</Button>
 			</Form>
 		</div>
+    </div>
 		);
 	}
 }
