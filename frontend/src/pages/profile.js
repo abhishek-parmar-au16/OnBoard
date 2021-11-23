@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { Component } from 'react';
 
 class Profile extends Component {
+
+ 
     constructor(props) {
         super(props)
     
@@ -64,6 +66,9 @@ class Profile extends Component {
       onSubmit(e) {
         e.preventDefault()
         alert("Personal Detail Saved Sucessfully")
+
+         
+       
         
         const PersonalDetailObject = {
           name: this.state.name,
@@ -147,8 +152,9 @@ class Profile extends Component {
                 </div >
                 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Save</button>
                     {/* <button type="submit" class="btn btn-primary">Next</button> */}
+                    
                 </div>
                 
             </form>

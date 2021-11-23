@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import Document from './pages/Document';
 import Bank from './pages/Bank';
 import Qualification from './pages/Qualification';
-import Medical from './pages/Medical';
+import Family from './pages/Family';
 
 function App() {
 return (
@@ -19,9 +19,9 @@ return (
 		<Route path='/profile' element={<Profile/>} />
 		<Route path='/Contact' element={<Contact/>} />
 		<Route path='/document' element={<Document/>} />
-		<Route path='/bank' element={<Bank/>} />
+		<Route path='/bank' 	element={<Bank/>} />
 		<Route path='/qualification' element={<Qualification/>} />
-		<Route path='/medical' component={<Medical/>} />
+		<Route path='/family' element={<Family/>} />
 	</Routes >
 	</Router>
 );

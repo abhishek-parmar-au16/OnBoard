@@ -93,6 +93,7 @@ class Qualification extends Component {
 				<Form.Label>CGPA/Percentage</Form.Label>
 				<Form.Control type="number" value={this.state.graduation} onChange={this.onChangeGraduation}/>
 				</Form.Group>
+        
 				<br/>
 				<Button variant="danger" size="lg" block="block" type="submit">
 					Submit

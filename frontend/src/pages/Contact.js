@@ -50,7 +50,7 @@ class Contact extends Component {
     
       onSubmit(e) {
         e.preventDefault()
-        alert("Personal Detail Saved Sucessfully")
+        alert("Contact Detail Saved Sucessfully")
         
         const ContactDetailObject = {
           name: this.state.name,
