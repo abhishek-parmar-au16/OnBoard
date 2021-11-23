@@ -119,6 +119,7 @@ class Document extends Component {
                     <button type="submit" class="btn btn-danger">Save</button>
                 </div>
         </div>
+        <button type="button" style={{float: 'right',width:'75px',height:'48px'}} onClick={event =>  window.location.href='/Bank'} class="btn btn-primary">Next</button>
       </div>
     );
   }

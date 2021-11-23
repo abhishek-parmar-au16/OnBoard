@@ -84,8 +84,9 @@ class Bank extends Component {
 				
 				<br/>
 				<Button variant="danger" size="lg" block="block" type="submit">
-				Submit
+				Save
 				</Button>
+          <button type="button" style={{float: 'right',width:'75px',height:'48px'}} onClick={event =>  window.location.href='/Qualification'} class="btn btn-primary">Next</button>
 			</Form>
 		</div>
 		);

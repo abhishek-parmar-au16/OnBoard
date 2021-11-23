@@ -158,7 +158,7 @@ class Profile extends Component {
                 </div>
                 
             </form>
-
+            <button type="button" style={{float: 'right',width:'75px',height:'48px'}} onClick={event =>  window.location.href='/Contact'} class="btn btn-primary">Next</button>
         </div>
 	</div>
         );

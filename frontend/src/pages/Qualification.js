@@ -1,10 +1,12 @@
 import Form from 'react-bootstrap/Form';
 import Button  from 'react-bootstrap/Button'; 
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"; 
 import axios from 'axios';
 
 
 class Qualification extends Component {
+  
 	constructor(props) {
         super(props)
     
@@ -15,6 +17,7 @@ class Qualification extends Component {
         this.onChangeCollegeName = this.onChangeCollegeName.bind(this);
         this.onChangeGraduation = this.onChangeGraduation.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     
         // Setting up state
         this.state = {
@@ -26,6 +29,9 @@ class Qualification extends Component {
           
 
         }
+      }
+      handleClick() {
+        console.log('Click happened');
       }
       onChangeName(e) {
         this.setState({ name: e.target.value })
@@ -96,8 +102,10 @@ class Qualification extends Component {
         
 				<br/>
 				<Button variant="danger" size="lg" block="block" type="submit">
-					Submit
+					Save
 				</Button>
+      <button type="button" style={{float: 'right',width:'75px',height:'48px'}} onClick={event =>  window.location.href='/Family'} class="btn btn-primary">Next</button>
+
 			</Form>
 		</div>
     </div>

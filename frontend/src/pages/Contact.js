@@ -67,7 +67,7 @@ class Contact extends Component {
       }
 	render() {
 		return (
-			<div>
+			<div >
 				<div class="form-wrapper  col-md-5 position-absolute top-50 start-50 translate-middle">
 			<Form onSubmit={this.onSubmit} >
 
@@ -97,9 +97,13 @@ class Contact extends Component {
 				</Form.Group>
 				<br/>
 				<Button variant="danger" size="lg" block="block" type="submit">
-				Submit
-				</Button>
+				Save
+				</Button >
+              <button type="button" style={{float: 'right',width:'75px',height:'48px'}} onClick={event =>  window.location.href='/Document'} class="btn btn-primary">Next</button>
 			</Form>
+             <div  >
+               
+            </div> 
 		</div>
 			</div>
 		);

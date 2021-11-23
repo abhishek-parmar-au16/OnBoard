@@ -165,7 +165,7 @@ class Family extends Component {
                 
                 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-danger">Save</button>
+                    <button type="submit" style={{float: 'centre'}} class="btn btn-danger">Submit</button>
                     {/* <button type="submit" class="btn btn-primary">Next</button> */}
                 </div>
                 
