@@ -29,6 +29,9 @@ class Contact extends Component {
 
         }
       }
+
+    
+
       onChangeName(e) {
         this.setState({ name: e.target.value })
       }
@@ -100,6 +103,8 @@ class Contact extends Component {
 				Submit
 				</Button>
 			</Form>
+      {this.props.children}
+      {/* <Button variant="danger" size="lg" onClick={this.handleClick.bind(this)} block="block" type="submit"></Button> */}
 		</div>
 			</div>
 		);

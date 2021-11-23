@@ -1,9 +1,8 @@
 import axios from 'axios'
 import React, { Component } from 'react';
-
 class Profile extends Component {
+  
 
- 
     constructor(props) {
         super(props)
     
@@ -18,6 +17,7 @@ class Profile extends Component {
         this.onChangeCity = this.onChangeCity.bind(this);
         this.onChangeZip = this.onChangeZip.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        // this.handleClick= this.handleClick.bind(this);
     
         // Setting up state
         this.state = {
@@ -33,6 +33,8 @@ class Profile extends Component {
 
         }
       }
+      
+     
       onChangeName(e) {
         this.setState({ name: e.target.value })
       }
@@ -62,13 +64,12 @@ class Profile extends Component {
       onChangeZip(e) {
         this.setState({ zip: e.target.value })
       }
+      
+      
     
       onSubmit(e) {
         e.preventDefault()
-        alert("Personal Detail Saved Sucessfully")
-
-         
-       
+        alert("Personal Detail Saved Sucessfully");
         
         const PersonalDetailObject = {
           name: this.state.name,
@@ -87,7 +88,8 @@ class Profile extends Component {
         this.setState({ name: '', email: '', dob: '',gender:'',presentAdd:'',permanentAdd:'',state:'',city:'',zip:'' })
       }
 
-
+      
+     
 
     render() {
         return (
@@ -153,11 +155,13 @@ class Profile extends Component {
                 
                 <div class="col-12">
                     <button type="submit" class="btn btn-danger btn-lg">Save</button>
-                    {/* <button type="submit" class="btn btn-primary">Next</button> */}
+  
                     
                 </div>
                 
             </form>
+            <button type="button" onClick={event =>  window.location.href='/Contact'} class="btn btn-primary">Next</button>
+            
 
         </div>
 	</div>
