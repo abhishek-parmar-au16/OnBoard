@@ -78,7 +78,8 @@ class Contact extends Component {
 
 				<Form.Group controlId="contact">
 				<Form.Label>Contact Number</Form.Label>
-				<Form.Control type="number" value={this.state.phonenumber} onChange={this.onChangeNumber} />
+				<Form.Control type="number" maxlength="10" value={this.state.phonenumber} onChange={this.onChangeNumber} />
+        
 				</Form.Group>
 
 				<Form.Group controlId="name">

@@ -4,26 +4,74 @@ const Schema = mongoose.Schema;
 
 
 let qualficationSchema = new Schema ({
-    name: {
-        type: String,
-        required:true
+    
+    ten:{
+        board:{
+            type: String,
+            required: true,
+        },
+        percentage:{
+            type:Number,
+            required:true,
+            minlength: 5 
+        },
+        year:{
+            type:Number,
+            required:true,
+            minlength:4
+        },
     },
-    ssc:{
-        type: Number,
-        required:true
-    },
-    hsc:{
-        type: Number,
-        required:true
-    },
-    collegeName:{
-        type: String,
-        required: true
-    },
-    graduation:{
-        type: Number,
-        required: true
-    }
+    // twelth:{
+    //     board:{
+    //         type: String,
+    //         required: true,
+    //     },
+    //     percentage:{
+    //         type:Number,
+    //         required:true,
+    //         minlength: 5 
+    //     },
+    //     year:{
+    //         type:Number,
+    //         required:true,
+    //         minlength:4
+    //     },
+    // },
+    // graduation:{
+    //     board:{
+    //         type: String,
+    //         required: true,
+    //     },
+    //     percentage:{
+    //         type:Number,
+    //         required:true,
+    //         minlength: 5 
+    //     },
+    //     year:{
+    //         type:Number,
+    //         required:true,
+    //         minlength:4
+    //     },
+    // },
+    // master:{
+    //     board:{
+    //         type: String,
+    //         required: true,
+    //     },
+    //     percentage:{
+    //         type:Number,
+    //         required:true,
+    //         minlength: 5 
+    //     },
+    //     year:{
+    //         type:Number,
+    //         required:true,
+    //         minlength:4
+    //     },
+    // },
+    
+    
+    
 
 },{timestamps:true},
 )

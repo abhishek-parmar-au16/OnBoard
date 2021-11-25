@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const contact = require('./contact');
 const Schema = mongoose.Schema;
 
 
@@ -38,6 +39,11 @@ let personalSchema = new Schema ({
     zip:{
         type: Number,
         required:true
+    },
+    contact:{
+        type:Schema.Types.ObjectId,
+        ref:'Contactinfo'
+
     }
 
 },{timestamps:true},
